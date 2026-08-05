@@ -9,8 +9,10 @@ For acronyms used in development, see `acronyms/`.
 
 ## 1.0.0 (2026-08-05)
 
-First packaging-oriented release of the Python **fdth** port, prepared for
-distribution via PyPI.
+First release of the Python **fdth** port on **PyPI** and **TestPyPI**.
+
+- PyPI: https://pypi.org/project/fdth/1.0.0/
+- TestPyPI: https://test.pypi.org/project/fdth/1.0.0/
 
 ### Highlights
 
@@ -25,32 +27,19 @@ distribution via PyPI.
 - Modern `pyproject.toml` (PEP 621): metadata, GPL-2.0, classifiers, project URLs
 - Runtime dependencies: `pandas`, `numpy`, `matplotlib`
 - Optional extras: `pip install "fdth[dev]"` (mypy, black, pdoc, build, twine, …)
-- Verified locally: `python -m build`, `twine check`, install from wheel, **20** unit tests OK
-- **D3:** built artifacts under `dist/` are committed to the remote (unusual on
-  purpose) so users can install the wheel before PyPI is live
+- Verified: build, `twine check`, TestPyPI install + **20** unit tests, then PyPI upload
+- **D3:** `dist/` wheel/sdist also kept in the GitHub repository
 
 ### Documentation
 
-- README rewritten in English (install, features, examples, development)
-- Author / maintainer and license sections added
-- This `NEWS.md` file introduced
+- README in English (install, features, examples, development)
+- Author / maintainer and license sections
+- This `NEWS.md` file
 
 ### Install
 
 ```text
 pip install fdth
-```
-
-Until the package appears on PyPI:
-
-```text
-pip install git+https://github.com/jcfaria/fdth-python-fork_2026.1.git
-```
-
-Or from the repository wheel:
-
-```text
-pip install https://github.com/jcfaria/fdth-python-fork_2026.1/raw/main/dist/fdth-1.0.0-py3-none-any.whl
 ```
 
 ### Compatibility

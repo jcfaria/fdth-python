@@ -10,20 +10,14 @@ A feature-complete port of the [fdth](https://github.com/jcfaria/fdth) R package
 pip install fdth
 ```
 
-> Until the package is published on PyPI, install from GitHub (source):
->
-> ```text
-> pip install git+https://github.com/jcfaria/fdth-python-fork_2026.1.git
-> ```
->
-> Or install the built wheel from this repository’s [`dist/`](dist/) folder
-> (project exception — artifacts are versioned on purpose):
->
-> ```text
-> pip install https://github.com/jcfaria/fdth-python-fork_2026.1/raw/main/dist/fdth-1.0.0-py3-none-any.whl
-> ```
+Package page: [pypi.org/project/fdth](https://pypi.org/project/fdth/) · Release notes: [NEWS.md](NEWS.md)
 
-Release notes: [NEWS.md](NEWS.md).
+Alternative installs (source / repo wheel):
+
+```text
+pip install git+https://github.com/jcfaria/fdth-python-fork_2026.1.git
+pip install https://github.com/jcfaria/fdth-python-fork_2026.1/raw/main/dist/fdth-1.0.0-py3-none-any.whl
+```
 
 ---
 

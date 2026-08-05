@@ -65,4 +65,5 @@ twine upload dist/*
 
 | Versão | Data | Ambiente | Notas |
 |--------|------|----------|-------|
-| — | — | — | Ainda sem upload |
+| 1.0.0 | 2026-08-05 | TestPyPI | https://test.pypi.org/project/fdth/1.0.0/ |
+| 1.0.0 | 2026-08-05 | **PyPI** | https://pypi.org/project/fdth/1.0.0/ — VCP BOK |
