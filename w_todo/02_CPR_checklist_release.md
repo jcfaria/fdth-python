@@ -28,7 +28,7 @@ Siglas: `acronyms/acronyms_pt.txt`. Cadeia VP: **VP-FDTH**.
 - [ ] CHANGELOG.md (pelo menos entrada `1.0.0`)
 - [ ] Conta no PyPI + TestPyPI (ou Trusted Publishing via GitHub)
 - [ ] Upload de ensaio no **TestPyPI** e `pip install` a partir dele
-- [ ] Decisão: manter material de disciplina (`HelpGit.md`, `examples/r`) no sdist ou excluir via `MANIFEST`/config
+- [ ] Decisão: manter material de disciplina (`HelpGit.md`, `examples/R`) no sdist ou excluir via `MANIFEST`/config
 
 ## C. Desejáveis (polish)
 

@@ -15,9 +15,11 @@ Package page: [pypi.org/project/fdth](https://pypi.org/project/fdth/) · Release
 Alternative installs (source / repo wheel):
 
 ```text
-pip install git+https://github.com/jcfaria/fdth-python-fork_2026.1.git
-pip install https://github.com/jcfaria/fdth-python-fork_2026.1/raw/main/dist/fdth-1.0.0-py3-none-any.whl
+pip install git+https://github.com/jcfaria/fdth-python.git
+pip install https://github.com/jcfaria/fdth-python/raw/main/dist/fdth-1.0.0-py3-none-any.whl
 ```
+
+Canonical repository: [github.com/jcfaria/fdth-python](https://github.com/jcfaria/fdth-python)
 
 ---
 
@@ -84,15 +86,16 @@ mfdt.plot(numeric_type="fh", categorical_type="fb")
 
 <img width="1599" height="811" alt="Grouped FDT plots — page 2" src="https://github.com/user-attachments/assets/68852616-0e8f-4174-8c92-2fd15f82f320" />
 
-More notebooks live under [`examples/python`](examples/python).
+More notebooks and mirrored `.py` scripts live under [`examples/Python`](examples/Python).
+Comparable R examples are under [`examples/R`](examples/R).
 
 ---
 
 ## Development
 
 ```sh
-git clone https://github.com/jcfaria/fdth-python-fork_2026.1.git
-cd fdth-python-fork_2026.1
+git clone https://github.com/jcfaria/fdth-python.git
+cd fdth-python
 
 python -m venv venv
 # Linux / macOS:  source venv/bin/activate
@@ -116,11 +119,12 @@ A short Git tutorial in Portuguese is available in [HelpGit.md](HelpGit.md).
 
 ## Background
 
-This Python port grew through collective work in the **Probability and
-Statistics** course (Computer Science, UESC) across semesters **2025.1**,
-**2025.2**, and **2026.1**. Earlier ports existed before that; the
-object-oriented design solidified in 2025. The package aims for full coverage
-of the original R **fdth** functionality.
+This package is a **collective Python port** of the R **fdth** library,
+developed at **UESC** (Computer Science — Probability and Statistics) with
+successive student cohorts and earlier community ports. The object-oriented
+design solidified over that collaborative work. The public reference
+repository is [jcfaria/fdth-python](https://github.com/jcfaria/fdth-python);
+version **1.0.0** is on [PyPI](https://pypi.org/project/fdth/).
 
 ---
 
@@ -139,14 +143,15 @@ of the original R **fdth** functionality.
 - [Yuri Coutinho Costa](https://github.com/yuriccosta)
 - [Maria Clara](https://github.com/MaryClaraSimoes)
 
-**2025.1** — Gabriel Galdino, Luciene Mª Torquato C. Batista, Stella Ribas,
-Thainá Guimarães, Yohanan Santana
+**UESC collaborators — first course cohort** — Gabriel Galdino,
+Luciene Mª Torquato C. Batista, Stella Ribas, Thainá Guimarães,
+Yohanan Santana
 
-**2025.2** — Alex Amaral dos Santos, Isaque Silva Passos Ribeiro,
-Kaiala de Jesus Santos, Olinoedson Silva Sena
+**UESC collaborators — second course cohort** — Alex Amaral dos Santos,
+Isaque Silva Passos Ribeiro, Kaiala de Jesus Santos, Olinoedson Silva Sena
 
-**2026.1** — Ariel Mariano Vieira, Eduardo Ferreira Diniz da Silva,
-Pedro Lucas do Nascimento de Oliveira
+**UESC collaborators — PyPI 1.0.0 release** — Ariel Mariano Vieira,
+Eduardo Ferreira Diniz da Silva, Pedro Lucas do Nascimento de Oliveira
 
 ---
 

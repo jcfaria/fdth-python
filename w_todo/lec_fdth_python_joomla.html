@@ -1,0 +1,153 @@
+<!--
+  Fragmento HTML para colar no editor do Joomla (modo Código / HTML).
+  Página LEC: pacote fdth para Python (port do fdth em R).
+  Modelo baseado em: https://lec.pro.br/software/pac-r/fdth
+  Repositório canónico: https://github.com/jcfaria/fdth-python
+-->
+
+<h1>fdth (Python)</h1>
+
+<h4>Descrição</h4>
+
+<p>
+<strong>fdth</strong> — <em>Frequency Distribution Tables, Histograms and Polygons</em>
+— é a versão em <strong>Python</strong> do pacote homónimo para o
+<a href="https://lec.pro.br/software/pac-r/fdth" target="_blank" rel="noopener">R</a>.
+</p>
+
+<p>
+O pacote facilita a construção de tabelas de distribuição de frequências (TDF)
+e das representações gráficas associadas (histogramas, polígonos, entre outras)
+no ambiente Python, com API orientada a objetos e integração natural com
+<code>pandas</code>, <code>numpy</code> e <code>matplotlib</code>.
+</p>
+
+<p>
+Trata-se de um <strong>port colectivo</strong> do pacote original em R: o objectivo
+foi tornar a mesma abordagem pedagógica e analítica disponível também em Python,
+mantendo a cobertura funcional do <strong>fdth</strong> clássico e aproveitando
+recursos adicionais (por exemplo, agrupamento com múltiplas chaves via
+<code>by=</code>).
+</p>
+
+<p>
+É um projeto registado sob a Licença Pública Geral
+<strong>GPL-2.0</strong>, sendo portanto software livre.
+</p>
+
+<h4>Objectivo e contexto</h4>
+
+<p>
+O <strong>fdth</strong> em R nasceu da necessidade de apoiar, de forma flexível,
+a redução univariada por TDF e a análise exploratória de dados no ensino e na
+investigação. A versão Python prolonga esse esforço: tornar o mesmo tipo de
+análise rotineira, documentada e reprodutível noutro ecossistema muito usado
+em Ciência da Computação e ciência de dados.
+</p>
+
+<p>
+O port foi construído de forma <strong>colectiva</strong>, com contribuições
+sucessivas de estudantes e colaboradores da
+<strong>Universidade Estadual de Santa Cruz (UESC)</strong>, em especial no
+âmbito da disciplina de <strong>Probabilidade e Estatística</strong>
+(Ciência da Computação), e a partir de trabalhos anteriores de portabilidade.
+A estruturação com foco em orientação a objectos consolidou-se ao longo desse
+esforço conjunto. A referência pública do projecto é o repositório
+<a href="https://github.com/jcfaria/fdth-python" target="_blank" rel="noopener">jcfaria/fdth-python</a>;
+a versão <strong>1.0.0</strong> está disponível no
+<a href="https://pypi.org/project/fdth/" target="_blank" rel="noopener">PyPI</a>.
+</p>
+
+<h4>Principais características</h4>
+
+<ul>
+  <li>Redução univariada via TDF (dados numéricos e categóricos)</li>
+  <li>TDFs simultâneas para dados multivariados (<code>DataFrame</code> / matrizes),
+      com agrupamento por uma ou mais variáveis categóricas</li>
+  <li>Representações gráficas associadas (histogramas, polígonos de frequências, etc.)</li>
+  <li>Medidas descritivas a partir de dados agrupados (média, mediana, moda, quantis, variância, …)</li>
+  <li>Entrada principal automática: <code>from fdth import fdt</code></li>
+  <li>Aceita, entre outros, listas, vectores NumPy e objectos pandas</li>
+</ul>
+
+<h4>Instalação</h4>
+
+<pre>pip install fdth</pre>
+
+<p>
+Página no PyPI:
+<a href="https://pypi.org/project/fdth/" target="_blank" rel="noopener">https://pypi.org/project/fdth/</a>
+</p>
+
+<h4>Autores e créditos</h4>
+
+<p><strong>Mantenedor (Python e R)</strong></p>
+<ul>
+  <li>José Cláudio Faria — Brasil / UESC / DCEX (autor principal e mantenedor)</li>
+</ul>
+
+<p><strong>Pacote original em R</strong>
+(<a href="https://cran.r-project.org/package=fdth" target="_blank" rel="noopener">CRAN</a>
+·
+<a href="https://github.com/jcfaria/fdth" target="_blank" rel="noopener">GitHub</a>
+·
+<a href="https://lec.pro.br/software/pac-r/fdth" target="_blank" rel="noopener">página LEC</a>)</p>
+<ul>
+  <li>José Cláudio Faria — Brasil / UESC (principal autor e mantenedor)</li>
+  <li>Enio Galinkin Jelihovschi — Brasil / UESC (co-autor)</li>
+  <li>Ivan Bezerra Allaman — Brasil / UESC (co-autor)</li>
+  <li>Jakson Alves de Aquino — (co-autor / colaborações)</li>
+</ul>
+
+<p><strong>Port inicial para Python</strong>
+(<a href="https://github.com/yuriccosta/fdth-python" target="_blank" rel="noopener">yuriccosta/fdth-python</a>)</p>
+<ul>
+  <li>Emyle Silva</li>
+  <li>Lucas Gabriel Ferreira</li>
+  <li>Yuri Coutinho Costa</li>
+  <li>Maria Clara</li>
+</ul>
+
+<p><strong>Colaboradores UESC — primeira coorte da disciplina</strong></p>
+<ul>
+  <li>Gabriel Galdino</li>
+  <li>Luciene Mª Torquato C. Batista</li>
+  <li>Stella Ribas</li>
+  <li>Thainá Guimarães</li>
+  <li>Yohanan Santana</li>
+</ul>
+
+<p><strong>Colaboradores UESC — segunda coorte da disciplina</strong></p>
+<ul>
+  <li>Alex Amaral dos Santos</li>
+  <li>Isaque Silva Passos Ribeiro</li>
+  <li>Kaiala de Jesus Santos</li>
+  <li>Olinoedson Silva Sena</li>
+</ul>
+
+<p><strong>Colaboradores UESC — liberação PyPI 1.0.0</strong></p>
+<ul>
+  <li>Ariel Mariano Vieira</li>
+  <li>Eduardo Ferreira Diniz da Silva</li>
+  <li>Pedro Lucas do Nascimento de Oliveira</li>
+</ul>
+
+<h4>Download e código</h4>
+
+<ul>
+  <li>Versão estável (PyPI):
+      <a href="https://pypi.org/project/fdth/" target="_blank" rel="noopener">pypi.org/project/fdth</a></li>
+  <li>Código e desenvolvimento (GitHub — referência principal):
+      <a href="https://github.com/jcfaria/fdth-python" target="_blank" rel="noopener">jcfaria/fdth-python</a></li>
+  <li>Notas de versão:
+      <a href="https://github.com/jcfaria/fdth-python/blob/main/NEWS.md" target="_blank" rel="noopener">NEWS.md</a></li>
+  <li>Pacote irmão em R:
+      <a href="https://lec.pro.br/software/pac-r/fdth" target="_blank" rel="noopener">fdth (R) no LEC</a>
+      ·
+      <a href="https://cran.r-project.org/package=fdth" target="_blank" rel="noopener">CRAN</a></li>
+</ul>
+
+<p>
+<em>Contacto do mantenedor:</em>
+<a href="mailto:joseclaudio.faria@gmail.com">joseclaudio.faria@gmail.com</a>
+</p>

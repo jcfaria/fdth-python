@@ -1,7 +1,8 @@
 # SAP — Situação Atual do Projeto
 
 **Pacote:** `fdth` (Python) · **FDTH**  
-**Repositório:** https://github.com/jcfaria/fdth-python-fork_2026.1  
+**Repositório canónico:** https://github.com/jcfaria/fdth-python  
+**PyPI:** https://pypi.org/project/fdth/  
 **Atualizado em:** 2026-08-05  
 **Origem:** port coletivo do pacote **R-FDTH** [fdth](https://github.com/jcfaria/fdth) (CRAN)  
 **Glossário:** `acronyms/` (PT preferido)
@@ -24,15 +25,17 @@ API pública principal (`fdth/__init__.py`):
 ## 2. Estrutura atual (raiz)
 
 ```
-fdth-python-fork_2026.1/
+fdth-python/
 ├── fdth/                 # código do pacote
 ├── tests/                # unittest
-├── examples/             # notebooks Python + scripts R de comparação
-├── pyproject.toml        # metadados mínimos
+├── examples/             # Python (notebooks + scripts) e R
+├── pyproject.toml
 ├── README.md
+├── NEWS.md
 ├── LICENSE               # GPL-2.0
-├── HelpGit.md            # tutorial Git (disciplina)
-└── w_todo/               # esta pasta (acompanhamento PyPI)
+├── HelpGit.md
+├── acronyms/
+└── w_todo/
 ```
 
 Layout: **flat** (pacote na raiz). Adequado para primeira publicação.
@@ -64,7 +67,7 @@ Layout: **flat** (pacote na raiz). Adequado para primeira publicação.
 | README | Existe; mistura PT/EN; bom exemplo; pouco focado em “usuário PyPI” |
 | CHANGELOG | Ausente |
 | Docs API (`pdoc`) | Mencionado no README; pasta `doc/` no `.gitignore` |
-| Exemplos | Notebooks em `examples/python` |
+| Exemplos | Notebooks + scripts em `examples/Python`; R em `examples/R` |
 | Testes | `tests/` com unittest |
 | CI (GitHub Actions) | Ausente |
 

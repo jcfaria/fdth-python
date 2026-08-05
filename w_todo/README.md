@@ -33,6 +33,13 @@ Siglas canónicas: [`../acronyms/`](../acronyms/) (preferir `acronyms_pt.txt`).
   antes do PyPI.
 - Regenerar com `python -m build` a cada versão; não editar os binários à mão.
 
+**D4 [F]** Repositório canónico
+
+- Nome público: **`jcfaria/fdth-python`** (sem “fork”, sem ano/semestre no nome).
+- Não é fork: repositório autónomo de referência do projecto Python.
+- Legado: `fdth-python-legacy` (arquivado); o antigo `fdth-python-fork_2026.1` aponta-se
+  para o canónico ou arquiva-se.
+
 ## Como usar
 
 1. Atualizar o **SAP** quando o estado do projeto mudar.

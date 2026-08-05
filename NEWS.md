@@ -7,6 +7,16 @@ For acronyms used in development, see `acronyms/`.
 
 ---
 
+## Unreleased
+
+### Repository
+
+- Canonical GitHub project is now **[jcfaria/fdth-python](https://github.com/jcfaria/fdth-python)**
+  (standalone reference repo, not a course/semester fork)
+- Examples reorganized: `examples/Python/{notebooks,scripts}` and `examples/R`
+
+---
+
 ## 1.0.0 (2026-08-05)
 
 First release of the Python **fdth** port on **PyPI** and **TestPyPI**.
@@ -52,5 +62,5 @@ pip install fdth
 
 - The high-level idea matches R **fdth** (tables + plots + grouped summaries)
 - Prefer `from fdth import fdt` as the usual entry point
-- See notebooks under `examples/python/` for worked examples
-- Side-by-side R scripts live under `examples/r/`
+- See notebooks and mirrored scripts under `examples/Python/`
+- Side-by-side R scripts live under `examples/R/`
