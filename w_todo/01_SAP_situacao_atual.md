@@ -51,7 +51,7 @@ Layout: **flat** (pacote na raiz). Adequado para primeira publicação.
 | Metadados PyPI (descrição, authors, license, URLs, classifiers) | Preenchidos |
 | `README` como long description | `readme = "README.md"` |
 | Nome no PyPI (`fdth`) | **Livre** (não há pacote oficial `fdth` no PyPI) |
-| Versão | `1.0.0` (PEP 440) |
+| Versão | `1.0.1` (PEP 440) |
 | Dependências runtime | `pandas`, `numpy`, `matplotlib` |
 | `pandas-stubs` | Movido para extras `dev` |
 | LICENSE | GPL-2.0 presente (alinhado ao R: GPL >= 2) |

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fdth"
-version = "1.0.0"
+version = "1.0.1"
 description = "Frequency distribution tables, histograms and polygons for numerical and categorical data"
 readme = "README.md"
 license = "GPL-2.0-only"

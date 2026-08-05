@@ -16,7 +16,7 @@ Alternative installs (source / repo wheel):
 
 ```text
 pip install git+https://github.com/jcfaria/fdth-python.git
-pip install https://github.com/jcfaria/fdth-python/raw/main/dist/fdth-1.0.0-py3-none-any.whl
+pip install https://github.com/jcfaria/fdth-python/raw/main/dist/fdth-1.0.1-py3-none-any.whl
 ```
 
 Canonical repository: [github.com/jcfaria/fdth-python](https://github.com/jcfaria/fdth-python)
@@ -124,7 +124,7 @@ developed at **UESC** (Computer Science — Probability and Statistics) with
 successive student cohorts and earlier community ports. The object-oriented
 design solidified over that collaborative work. The public reference
 repository is [jcfaria/fdth-python](https://github.com/jcfaria/fdth-python);
-version **1.0.0** is on [PyPI](https://pypi.org/project/fdth/).
+version **1.0.1** is on [PyPI](https://pypi.org/project/fdth/).
 
 ---
 

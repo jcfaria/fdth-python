@@ -7,13 +7,25 @@ For acronyms used in development, see `acronyms/`.
 
 ---
 
-## Unreleased
+## 1.0.1 (2026-08-05)
 
-### Repository
+Patch release: packaging metadata and project layout (no API changes).
 
-- Canonical GitHub project is now **[jcfaria/fdth-python](https://github.com/jcfaria/fdth-python)**
-  (standalone reference repo, not a course/semester fork)
-- Examples reorganized: `examples/Python/{notebooks,scripts}` and `examples/R`
+- PyPI: https://pypi.org/project/fdth/1.0.1/
+- TestPyPI: https://test.pypi.org/project/fdth/1.0.1/
+
+### Changes
+
+- Project URLs point to the canonical repository
+  **[jcfaria/fdth-python](https://github.com/jcfaria/fdth-python)**
+- Examples layout: `examples/Python/{notebooks,scripts}` and `examples/R`
+- Documentation / NEWS / README aligned with the public reference repo
+
+### Install
+
+```text
+pip install fdth==1.0.1
+```
 
 ---
 
