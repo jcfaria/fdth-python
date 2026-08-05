@@ -1,12 +1,64 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "fdth"
-version = "1.0"
-requires-python = ">= 3.10"
+version = "1.0.0"
+description = "Frequency distribution tables, histograms and polygons for numerical and categorical data"
+readme = "README.md"
+license = "GPL-2.0-only"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [
+    { name = "José Cláudio Faria", email = "joseclaudio.faria@gmail.com" },
+]
+maintainers = [
+    { name = "José Cláudio Faria", email = "joseclaudio.faria@gmail.com" },
+]
+keywords = [
+    "frequency-distribution",
+    "histogram",
+    "statistics",
+    "fdt",
+    "categorical",
+    "numerical",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
 dependencies = [
     "pandas",
     "numpy",
     "matplotlib",
-
-    # stubs (for use with mypy)
-    "pandas-stubs",
 ]
+
+[project.optional-dependencies]
+dev = [
+    "pandas-stubs",
+    "mypy",
+    "black",
+    "pdoc",
+    "build",
+    "twine",
+]
+
+[project.urls]
+Homepage = "https://github.com/jcfaria/fdth-python-fork_2026.1"
+Repository = "https://github.com/jcfaria/fdth-python-fork_2026.1"
+Issues = "https://github.com/jcfaria/fdth-python-fork_2026.1/issues"
+"R package (original)" = "https://github.com/jcfaria/fdth"
+
+[tool.setuptools.packages.find]
+include = ["fdth*"]
+exclude = ["tests*", "examples*", "w_todo*"]

@@ -1,0 +1,84 @@
+================================================================================
+ACRONYMS / GLOSSARY — fdth Python (English)
+================================================================================
+Updated: 2026-08-05 (D2: `work` = permanent active local branch)
+Twin (PT-BR): acronyms_pt.txt
+Use: chat / commits / CPR. Keep short; expand here, not in code.
+Any add / edit / rename / delete must update the PT twin in the same task.
+Origin: adapted from the STATghost `acronyms/` pack (Git flow + planning).
+
+----
+Git flow (human → AI)
+----
+CP      Commit + Push on the active local branch (`work` — always)
+CPMW    Commit + Push + Main merge + Push main + return to `work`
+        (order: commit → push `work` → merge into `main` → push `main` → `work`)
+        After CPMW the local checkout must remain on `work`.
+AN      Update public notes: `NEWS.md` **and** README (and generated docs
+        if any). Required before CP/CPMW that change user-visible
+        behaviour or version.
+VCP     Vamos Consolidar o Projeto — full ship pipeline (human GO). Typical
+        order for fdth → PyPI:
+        1) AN (`NEWS.md` + README / docs)
+        2) CP
+        3) CPMW (promote `main`, return to `work`)
+        4) local build (`python -m build`) + `twine check`
+        5) **TestPyPI** rehearsal (install + tests)
+        6) publish version (git tag + **PyPI** upload + GitHub Release)
+        Implies push + promote `main` + publish; not a partial CP alone.
+
+----
+Planning / quality
+----
+CPR     Production Control / Roadmap (VP chain)
+        Living file: `w_todo/02_CPR_checklist_release.md`
+SAP     Current Project Situation (snapshot)
+        Living file: `w_todo/01_SAP_situacao_atual.md`
+VP      Partial Verification (CPR item; e.g. VP-FDTH-3)
+BOK     Bom OK — VP criteria met (SMOKE / SP / ST / …)
+TF      Teste Feito — status that checks for the current work are done
+        (pair with BOK in chat). Not a command to re-run gates; to run a
+        gate, say SMOKE / SP / ST (or Dev mode).
+SP      Smoke Python — `tests/` suite via
+        `python -m unittest discover -s tests`
+ST      Smoke Total — SP + distribution checks
+        (`python -m build` + `twine check dist/*`) when applicable
+SPD     Smoke Dev Python — fast subset of tests (files or cases under the
+        current VP focus). In Dev prefer SPD before full SP.
+SMOKE   Fast minimal import/API smoke
+        (e.g. `python -c "from fdth import fdt; print(fdt([1,2,3]))"`)
+D*      Provisional/closed decision (record under `w_todo/` when needed)
+        [P] provisional  [F] closed
+        (Not the same as Smoke **Dev** suffix on SPD.)
+
+----
+Product / packaging
+----
+FDTH    Brand / package: `fdth` (Python); port of the homonymous R package
+FDT     Frequency Distribution Table
+R-FDTH  Original R package (CRAN / https://github.com/jcfaria/fdth)
+PYPI    Python Package Index — public distribution registry
+TPYPI   TestPyPI — upload rehearsal before production PyPI
+PEP621  Project metadata in `pyproject.toml` ([project] table)
+SDIST   Source distribution (`*.tar.gz` from `python -m build`)
+WHEEL   Pure/binary wheel (`*.whl` from `python -m build`)
+TWINE   Upload/check tool (`twine check` / `twine upload`)
+SRC     `src/fdth/` layout (optional future; today flat layout `fdth/`)
+VP-FDTH VP prefix for this publishing chain (VP-FDTH-1..N);
+        do not reuse numbers from other projects (STATG, etc.)
+
+----
+Branches
+----
+work    active development — **always the active local branch** (D2 [F]).
+        Do not day-to-day develop on `main`; after any merge/CPMW switch
+        straight back to `work`.
+main    stable / releases (promote via CPMW; not a routine checkout)
+
+----
+Working folders
+----
+w_todo  SAP / CPR / plan texts (`w_todo/`) — not package code
+acronyms  This glossary (PT/EN mirror)
+
+================================================================================

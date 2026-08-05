@@ -1,0 +1,84 @@
+================================================================================
+SIGLAS / GLOSSÁRIO — fdth Python (Português Brasil)
+================================================================================
+Atualizado: 2026-08-05 (D2: `work` = ramo local ativo permanente)
+Gémeo (EN): acronyms_en.txt
+Uso: chat / commits / CPR. Curto; expandir aqui, não no código.
+Qualquer add / edit / rename / delete deve atualizar o gémeo EN na mesma tarefa.
+Origem: adaptado do pack `acronyms/` do STATghost (fluxo Git + planeamento).
+
+----
+Fluxo Git (humano → IA)
+----
+CP      Commit + Push no ramo local ativo (`work` — sempre)
+CPMW    Commit + Push + merge em Main + Push main + voltar a `work`
+        (ordem: commit → push `work` → merge em `main` → push `main` → `work`)
+        Após CPMW o checkout local deve permanecer em `work`.
+AN      Atualizar notas públicas: `NEWS.md` **e** README (e docs geradas
+        se existirem). Obrigatório antes de CP/CPMW que alterem
+        comportamento ou versão visível ao utilizador.
+VCP     Vamos Consolidar o Projeto — pipeline completo de publicação
+        (GO humano). Ordem tipica para fdth → PyPI:
+        1) AN (`NEWS.md` + README / docs)
+        2) CP
+        3) CPMW (promover `main`, regressar a `work`)
+        4) build local (`python -m build`) + `twine check`
+        5) ensaio **TestPyPI** (install + testes)
+        6) lançar versão (tag git + upload **PyPI** + GitHub Release)
+        Implica push + promover `main` + publicar; não é só um CP parcial.
+
+----
+Planeamento / qualidade
+----
+CPR     Controlo de Produção / Roadmap (cadeia VP)
+        Ficheiro vivo: `w_todo/02_CPR_checklist_release.md`
+SAP     Situação Atual do Projeto (snapshot)
+        Ficheiro vivo: `w_todo/01_SAP_situacao_atual.md`
+VP      Verificação Parcial (item do CPR; ex. VP-FDTH-3)
+BOK     Bom OK — critérios do VP cumpridos (SMOKE / SP / ST / …)
+TF      Teste Feito — estado: as verificações do trabalho atual estão
+        feitas (combinar com BOK no chat). Não é comando para re-correr
+        gates; para correr um gate, diga SMOKE / SP / ST (ou modo Dev).
+SP      Smoke Python — suite `tests/` via
+        `python -m unittest discover -s tests`
+ST      Smoke Total — SP + checagens de distribuição
+        (`python -m build` + `twine check dist/*`) quando aplicável
+SPD     Smoke Dev Python — subconjunto rápido dos testes (ficheiros ou
+        casos sob foco do VP atual). Em Dev preferir SPD antes de SP.
+SMOKE   Smoke rápido de import/API mínima
+        (ex.: `python -c "from fdth import fdt; print(fdt([1,2,3]))"`)
+D*      Decisão provisória/fechada (registar em `w_todo/` quando surgir)
+        [P] provisória  [F] fechada
+        (Não confundir com o sufixo Smoke **Dev** em SPD.)
+
+----
+Produto / empacotamento
+----
+FDTH    Marca / pacote: `fdth` (Python); port do pacote R homónimo
+FDT     Frequency Distribution Table — tabela de distribuição de frequências
+R-FDTH  Pacote R original (CRAN / https://github.com/jcfaria/fdth)
+PYPI    Python Package Index — repositório público de distribuição
+TPYPI   TestPyPI — ensaio de upload antes do PyPI de produção
+PEP621  Metadados de projeto em `pyproject.toml` ([project] table)
+SDIST   Source distribution (artefacto `*.tar.gz` de `python -m build`)
+WHEEL   Wheel binário/puro (artefacto `*.whl` de `python -m build`)
+TWINE   Ferramenta de upload/check (`twine check` / `twine upload`)
+SRC     Layout `src/fdth/` (opcional futuro; hoje o layout é flat `fdth/`)
+VP-FDTH Prefixo VP desta cadeia de publicação (VP-FDTH-1..N);
+        não reutilizar números de outros projetos (STATG, etc.)
+
+----
+Ramos
+----
+work    desenvolvimento ativo — **sempre o ramo local ativo** (D2 [F]).
+        Não desenvolver em `main` no dia a dia; após qualquer merge/CPMW
+        voltar imediatamente a `work`.
+main    estável / releases (promover via CPMW; não é checkout de rotina)
+
+----
+Pastas de trabalho
+----
+w_todo  Textos SAP / CPR / plano (`w_todo/`) — não é código do pacote
+acronyms  Este glossário (espelho PT/EN)
+
+================================================================================

@@ -1,0 +1,35 @@
+---
+description: fdth — acronyms multi-language mirror (golden)
+alwaysApply: true
+---
+
+# fdth — acronyms mirror (regra de ouro)
+
+Project glossary lives as a **full language mirror** under `acronyms/`:
+
+| Pack | File | Language |
+|------|------|----------|
+| PT-BR | `acronyms/acronyms_pt.txt` | Portuguese Brazil (owner preference) |
+| EN | `acronyms/acronyms_en.txt` | English |
+| Compat stub | `acronyms/acronyms.txt` | Pointer only — not the body |
+
+## Norm (permanent)
+
+1. **Same keys / ids / paths** in both twins (CP, VCP, VP-FDTH, …). Translate
+   **prose only**; keep acronym tokens identical.
+2. **Any add / edit / rename / delete** of an entry must update **both**
+   twins in the **same task** — no single-language drift.
+3. Twin headers must cross-point (`Twin (PT-BR): …` / `Gémeo (EN): …`) and
+   share the same `Updated:` / `Atualizado:` date when content changes.
+4. Do **not** put glossary body back into `acronyms/acronyms.txt` (stub only).
+5. When citing the glossary to the owner, prefer **PT**
+   (`acronyms/acronyms_pt.txt`). EN for international / GitHub readers.
+6. New languages only on explicit request (same mirror discipline as
+   `w_todo`).
+7. Root folder is **`acronyms/`**. Packs: `acronyms_en.txt` and
+   `acronyms_pt.txt`.
+
+## Reading preference
+
+- Owner: PT (`acronyms/acronyms_pt.txt`).
+- EN remains first-class (`acronyms/acronyms_en.txt`).

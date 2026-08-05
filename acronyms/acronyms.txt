@@ -1,0 +1,13 @@
+================================================================================
+fdth (Python) glossary — pointer (compat)
+================================================================================
+The glossary is now a **language mirror** (same keys; prose translated):
+
+  PT-BR (prefer for chat with owner):  acronyms_pt.txt
+  English:                             acronyms_en.txt
+
+Policy / golden rule: `.cursor/rules/fdth-acronyms-mirror.mdc`
+Folder note:          README.md
+
+Do not edit this stub as the glossary body — edit both twins instead.
+================================================================================
