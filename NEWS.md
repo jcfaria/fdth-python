@@ -26,6 +26,8 @@ distribution via PyPI.
 - Runtime dependencies: `pandas`, `numpy`, `matplotlib`
 - Optional extras: `pip install "fdth[dev]"` (mypy, black, pdoc, build, twine, …)
 - Verified locally: `python -m build`, `twine check`, install from wheel, **20** unit tests OK
+- **D3:** built artifacts under `dist/` are committed to the remote (unusual on
+  purpose) so users can install the wheel before PyPI is live
 
 ### Documentation
 
@@ -43,6 +45,12 @@ Until the package appears on PyPI:
 
 ```text
 pip install git+https://github.com/jcfaria/fdth-python-fork_2026.1.git
+```
+
+Or from the repository wheel:
+
+```text
+pip install https://github.com/jcfaria/fdth-python-fork_2026.1/raw/main/dist/fdth-1.0.0-py3-none-any.whl
 ```
 
 ### Compatibility

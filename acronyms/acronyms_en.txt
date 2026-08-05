@@ -60,8 +60,10 @@ R-FDTH  Original R package (CRAN / https://github.com/jcfaria/fdth)
 PYPI    Python Package Index — public distribution registry
 TPYPI   TestPyPI — upload rehearsal before production PyPI
 PEP621  Project metadata in `pyproject.toml` ([project] table)
-SDIST   Source distribution (`*.tar.gz` from `python -m build`)
-WHEEL   Pure/binary wheel (`*.whl` from `python -m build`)
+SDIST   Source distribution (`*.tar.gz` from `python -m build`);
+        in this project tracked under `dist/` (D3 [F])
+WHEEL   Pure/binary wheel (`*.whl` from `python -m build`);
+        in this project tracked under `dist/` (D3 [F])
 TWINE   Upload/check tool (`twine check` / `twine upload`)
 SRC     `src/fdth/` layout (optional future; today flat layout `fdth/`)
 VP-FDTH VP prefix for this publishing chain (VP-FDTH-1..N);

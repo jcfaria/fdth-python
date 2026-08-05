@@ -26,6 +26,13 @@ Siglas canónicas: [`../acronyms/`](../acronyms/) (preferir `acronyms_pt.txt`).
 - **`work` é sempre o ramo local ativo** (desenvolvimento diário).
 - `main` só via **CPMW** (estável / releases); após promover, voltar a `work`.
 
+**D3 [F]** Pasta `dist/` no remoto
+
+- Exceção às normas usuais de Python: versionar **wheel** e **sdist** em `dist/`.
+- Objetivo: sinalizar release pronta e permitir `pip install` do artefato no GitHub
+  antes do PyPI.
+- Regenerar com `python -m build` a cada versão; não editar os binários à mão.
+
 ## Como usar
 
 1. Atualizar o **SAP** quando o estado do projeto mudar.

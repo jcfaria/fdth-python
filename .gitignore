@@ -13,7 +13,12 @@ __pycache__/
 .Python
 build/
 develop-eggs/
-dist/
+# D3 [F] EXCEPTION (this project): track release wheels/sdists in dist/
+# so users can download/install from the remote before PyPI.
+# Ignore other junk under dist/; keep only publishable artifacts.
+dist/*
+!dist/*.whl
+!dist/*.tar.gz
 downloads/
 eggs/
 .eggs/
