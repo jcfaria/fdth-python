@@ -3,7 +3,7 @@ Mirrored from notebook: Multiple FDT Plots.ipynb
 Run with the fdth package installed (pip install fdth or pip install -e .).
 """
 
-# Importações e criação dos dados
+#. Imports
 import pandas as pd
 from fdth import fdt
 import matplotlib.pyplot as plt
@@ -17,21 +17,17 @@ df = pd.DataFrame({
 
 mfdt_by = fdt(df, by="Sexo")
 
-
-# Histogramas básicos
+#.. Histogramas básicos
 mfdt_by.plot()
 
-
-# Polígono
+#.. Polígono
 mfdt_by.plot(numeric_type="fp")
 
-
-# Histograma (frequencia relativa)
+#.. Histograma (frequencia relativa)
 mfdt_by.plot(numeric_type="rfh")
 
-
-# Densidade cumulativa
+#.. Densidade cumulativa
 mfdt_by.plot(numeric_type="cdh")
 
-# Keep plot windows open when running as a script
+#.. Keep plot windows open when running as a script
 plt.show()

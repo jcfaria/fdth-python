@@ -7,6 +7,13 @@ For acronyms used in development, see `acronyms/`.
 
 ---
 
+## Unreleased
+
+- Example scripts under `examples/Python/scripts`: clearer section comments and
+  call formatting; all scripts use `from fdth import fdt`
+
+---
+
 ## 1.0.1 (2026-08-05)
 
 Patch release: packaging metadata and project layout (no API changes).
